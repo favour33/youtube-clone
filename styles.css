@@ -1,3 +1,25 @@
 body {
   margin: 0;
 }
+
+.search-bar {
+  display: block;
+}
+
+.thumbnail-1 {
+  width: 300px;
+  display: block;
+}
+
+.video-preview {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.video-preview-2 {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
