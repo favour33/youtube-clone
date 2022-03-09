@@ -9,9 +9,6 @@
   left: 0;
   right: 0;
   background-color: white;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: black;
 
   z-index: 100;
 }
@@ -70,11 +67,37 @@
   width: 60px;
   border: 1px solid rgb(194, 194, 194);
   margin-left: -1px;
+  position: relative;
 }
 
 .search-button img {
   height: 25px;
   margin-top: 4px;
+}
+
+.search-button,
+.voice-over-button {
+  position: relative;
+}
+
+.search-button .tool-tips,
+.voice-over-button .tool-tips {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 10px 8px;
+  border-radius: 3px;
+  left: 0;
+  top: 50px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.search-button:hover .tool-tips,
+.voice-over-button:hover .tool-tips {
+  opacity: 1;
 }
 
 .voice-over-button {
